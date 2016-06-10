@@ -1,0 +1,7 @@
+name = BRIDG
+description = BRIDG site custom functions and utilities
+core = 7.x
+version = "7.x-1.0"
+package = "BRIDG"
+
+files[] = BRIDG.module
