@@ -210,21 +210,40 @@
  *   );
  * @endcode
  */
+/*
+*$databases = array (
+*  'default' => 
+*  array (
+*    'default' => 
+*    array (
+*      'database' => 'nci-bridg',
+*      'username' => 'drupalsite',
+*      'password' => 'drupal123',
+*      'host' => '127.0.0.1',
+*      'port' => '',
+*      'driver' => 'mysql',
+*      'prefix' => '',
+*    ),
+*  ),
+*);
+*/
+
 $databases = array (
   'default' => 
   array (
     'default' => 
     array (
       'database' => 'nci-bridg',
-      'username' => 'drupalsite',
-      'password' => 'drupal123',
+      'username' => 'drupaluser',
+      'password' => '',
       'host' => '127.0.0.1',
-      'port' => '',
+      'port' => '3306',
       'driver' => 'mysql',
       'prefix' => '',
     ),
   ),
 );
+
 
 /**
  * Access control for update.php script.
