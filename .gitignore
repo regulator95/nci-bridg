@@ -2,6 +2,7 @@
 settings.php
 
 # Ignore paths that contain generated content.
-files/
+files/ctools
+
 # theme is separate repository 
-themes/ 
+themes 
