@@ -115,6 +115,15 @@ table.table-eventsreg > thead > tr  {
 }
 
 /* nci d8 Migrate */
+/* Allow .svg in header needs a width to show up.  */
+.navbar-brand > img {
+    width: 400px;
+}
+#block-bridgstakeholderlinks {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
 .well {
   min-height: 20px;
   padding: 19px;
@@ -138,4 +147,34 @@ table.table-eventsreg > thead > tr  {
 }
 #block-nci-barrio-evsrelatedlinks {
     border:0px;
+}
+a {
+    color: #337ab7;
+}
+a.focus, a:hover {
+    color: #23527c;
+}
+
+/* BRIDGMODEL */
+h2 span.field.field--name-title {
+    font-size: 1.714em;
+    margin: 0 0 20px;
+    color: #000;
+    line-height: 1.4em;
+    font-weight:normal;
+}
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0e3a55;
+}
+h3 {
+    font-size: 1.286em;
+}
+
+.utility a.focus, .utility a:hover {
+    color: Gainsboro;
+}
+main#content nav.tabs {
+    margin-bottom: 0px;
 }

@@ -99,31 +99,77 @@
                 </div>
             </div>
             <!-- END UTILITY NAV -->
+            <!-- Start of Code for BRIDGMODEL -->
 
-
-
-                <nav{{ navbar_attributes }}>
-                    {% if container_navbar %}
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                     <div class="container">
-                        {% endif %}
-                        {{ page.header }}
-                        {% if page.primary_menu or page.header_form %}
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse" id="CollapsingNavbar">
-                                {{ page.primary_menu }}
-                                {% if page.header_form %}
-                                    <div class="form-inline navbar-form float-right">
-                                        {{ page.header_form }}
-                                    </div>
-                                {% endif %}
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#"></a>
+
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/bridg">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/about-bridg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About BRIDG Model
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/about-bridg" class="active-trail active-trail active">About</a>
+                                    <a class="dropdown-item" href="/about-bridg/stakeholders" class="active-trail active-trail active">Stakeholders</a>
+                                    <a class="dropdown-item" href="/about-bridg/project-goals">Project Goals</a>
+                                    <a class="dropdown-item" href="/about-bridg/background">Background</a>
+                                    <a class="dropdown-item" href="/about-bridg/governance">Governance</a>
+                                    <a class="dropdown-item" href="/whats-bridg">What's in BRIDG?</a>
+                                    <a class="dropdown-item" href="/other-documents/presentations">BRIDG Presentations</a>
+                                    <a class="dropdown-item" href="/faq" title="">FAQs</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/download-model" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download/View Model</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/download-model">Instructions</a>
+                                    <a class="dropdown-item" href="/download-model/free-enterprise-architect-viewer">Free Enterprise Architect Viewer</a>
+                                    <a class="dropdown-item" href="/download-model/download-working-copy">Download Work-in-progress Model file</a>
+                                    <a class="dropdown-item" href="/download-model/bridg-releases" title="">Download BRIDG Releases</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/contributing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contributing to BRIDG</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/contributing">Contributing</a>
+                                    <a class="dropdown-item" href="/contributing/providing-semantics">Semantics for Harmonization</a>
+                                    <a class="dropdown-item" href="/contributing/providing-semantics/harmonization-package">Harmonization Process</a>
+                                    <a class="dropdown-item" href="/contributing/providing-semantics">Harmonization Package</a>
+                                    <a class="dropdown-item" href="/contributing/providing-semantics/harmonization-process">Feedback</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/providing-feedback">Providing Feedback</a>
+                            </li>
+                            <!--
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger" >Action</button>
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
                             </div>
-                        {% endif %}
-                        {% if sidebar_collapse %}
-                            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-                        {% endif %}
-                        {% if container_navbar %}
+                            -->
+                        </ul>
                     </div>
-                    {% endif %}
+                    </div>
                 </nav>
             {% endblock %}
         </header>
