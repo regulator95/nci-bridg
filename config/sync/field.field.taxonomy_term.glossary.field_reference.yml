@@ -1,0 +1,19 @@
+uuid: 73668dea-bd9d-497d-b245-d3811285bef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_reference
+    - taxonomy.vocabulary.glossary
+id: taxonomy_term.glossary.field_reference
+field_name: field_reference
+entity_type: taxonomy_term
+bundle: glossary
+label: reference
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

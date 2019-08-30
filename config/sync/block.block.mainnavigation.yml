@@ -1,0 +1,33 @@
+uuid: b1ca1ce9-12db-4f2c-ad41-7402894e976b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - nci_barrio
+id: mainnavigation
+theme: nci_barrio
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'About BRIDG Model'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:b23b26ca-4fdc-4ef9-bf90-5ecd1df79fd4'
+  suggestion: main
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about-bridg\r\n/about-bridg/*\r\n/governance\r\n/governance/*\r\n/whats-bridg\r\n/whats-bridg/*\r\n/what/*\r\n/other-documents/presentations\r\n/faq\r\n/faq/*\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,33 @@
+uuid: f90911ff-db06-44c2-9ced-fbb766084b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - nci_barrio
+id: mainnavigation_3
+theme: nci_barrio
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Contributing to BRIDG'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:menu_link_content:e680530b-80d1-4d3f-ae9a-75dd07a528eb'
+  suggestion: main
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contributing\r\n/contributing/*"
+    negate: false
+    context_mapping: {  }

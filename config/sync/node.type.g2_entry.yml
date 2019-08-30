@@ -1,0 +1,11 @@
+uuid: dab22731-22ac-402e-adaf-80f9420fbfac
+langcode: en
+status: true
+dependencies: {  }
+name: 'G2 entry'
+type: g2_entry
+description: 'A G2 entry is a term (usual sense, not drupal sense) for which a definition and various additional information is provided, notably at the editorial level'
+help: 'The title should be either a acronym/initialism or a normal word. If it is an acronym/initialism, use the expansion field to decode it, not the definition field.'
+new_revision: false
+preview_mode: 1
+display_submitted: true

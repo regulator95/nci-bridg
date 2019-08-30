@@ -1,0 +1,17 @@
+uuid: 441f08b2-e6eb-488c-b1d2-20156ed81873
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: view_html_model_button
+label: 'View HTML Model Button'
+code: "#html_btn {\r\n\tcolor: #fff;\r\n\tbackground-color: #007bff;\r\n\tborder-color: #007bff;\r\n}\r\n\r\n#html_btn:hover {\r\n  color: #fff;\r\n  background-color: #0069d9;\r\n  border-color: #0062cc;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/download-model/bridg-releases/*'
+    negate: false
+conditions_require_all: true

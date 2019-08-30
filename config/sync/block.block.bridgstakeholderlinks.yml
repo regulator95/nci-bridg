@@ -1,0 +1,25 @@
+uuid: 405aec48-fd8a-4f7a-8b3f-6ac93e66344f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:84fcfc31-534c-4015-a27b-f7190b4be7c0'
+  module:
+    - block_content
+  theme:
+    - nci_barrio
+id: bridgstakeholderlinks
+theme: nci_barrio
+region: top_header_form
+weight: -6
+provider: null
+plugin: 'block_content:84fcfc31-534c-4015-a27b-f7190b4be7c0'
+settings:
+  id: 'block_content:84fcfc31-534c-4015-a27b-f7190b4be7c0'
+  label: 'BRIDG-stakeholder-links '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

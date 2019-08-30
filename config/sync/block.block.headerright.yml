@@ -1,0 +1,25 @@
+uuid: 82ae22f0-ac86-4388-8b51-19dac5da718a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c59be14-f552-4846-8e2c-cec2ed3b9e4e'
+  module:
+    - block_content
+  theme:
+    - nci_barrio
+id: headerright
+theme: nci_barrio
+region: top_header_form
+weight: -8
+provider: null
+plugin: 'block_content:4c59be14-f552-4846-8e2c-cec2ed3b9e4e'
+settings:
+  id: 'block_content:4c59be14-f552-4846-8e2c-cec2ed3b9e4e'
+  label: 'header right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

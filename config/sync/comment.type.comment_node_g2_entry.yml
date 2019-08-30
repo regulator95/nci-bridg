@@ -1,0 +1,8 @@
+uuid: 45a0824e-80ee-4f50-a6fd-232945f5e78e
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_g2_entry
+label: 'G2 entry comment'
+target_entity_type_id: node
+description: null
