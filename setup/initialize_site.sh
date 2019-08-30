@@ -3,8 +3,16 @@
 echo "*** Setting the website on docker after compose install"
 echo ""
 echo "*Setting up directory permissions"
-echo "chmod -R 775 /local/drupal/site/web/default"
-chmod -R 775 /local/drupal/site/web/default
+echo "chmod -R 775 /local/drupal/site/web/sites/default/files"
+chmod -R 775 /local/drupal/site/web/sites/default/files
+echo "chmod -R 775 /local/drupal/site/web/sites/default/s*"
+chmod -R 664 /local/drupal/site/web/sites/default/s*
+
 echo ""
 echo "*Add symbolic link to shared volume"
-ln -s /mnt/s3fs/
+echo "username = the project name for docker"
+echo "ln -s /mnt/s3fs/$username /local/drupal/site/web/sites/default/files/assets/s3fs"
+ln -s /mnt/s3fs /local/drupal/site/web/sites/default/files/assets/s3fs
+echo "ls -latr"
+ls -latr
+
