@@ -19,10 +19,10 @@ ls -latr
 echo "Import Config or Load Database if config doesn't work"
 #echo "drush cim -y"
 #drush cim -y
-drush sql-cli < ../database.sql
+drush sql-cli < /local/drupal/site/database.sql
 
 echo "Adding server info"
 
-/local/drupal/sites/setup/enable_ldap.sh
+/local/drupal/site/setup/enable_ldap.sh
 
 
