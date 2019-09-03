@@ -36,7 +36,6 @@ module:
   image: 0
   imce: 0
   jquery_migrate: 0
-  ldap_authentication: 0
   ldap_help: 0
   ldap_query: 0
   ldap_servers: 0
