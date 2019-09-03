@@ -16,3 +16,12 @@ ln -s /mnt/s3fs /local/drupal/site/web/sites/default/files/assets/s3fs
 echo "ls -latr"
 ls -latr
 
+echo "Import Config or Load Database if config doesn't work"
+echo "drush cim -y"
+drush cim -y
+
+echo "Adding server info"
+
+./enable_ldap.sh
+
+
