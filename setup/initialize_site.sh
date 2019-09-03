@@ -5,7 +5,7 @@ echo ""
 echo "*Setting up directory permissions"
 echo "chmod -R 775 /local/drupal/site/web/sites/default/files"
 chmod -R 775 /local/drupal/site/web/sites/default/files
-echo "chmod -R 775 /local/drupal/site/web/sites/default/s*"
+echo "chmod -R 664 /local/drupal/site/web/sites/default/s*"
 chmod -R 664 /local/drupal/site/web/sites/default/s*
 
 echo ""
@@ -17,11 +17,12 @@ echo "ls -latr"
 ls -latr
 
 echo "Import Config or Load Database if config doesn't work"
-echo "drush cim -y"
-drush cim -y
+#echo "drush cim -y"
+#drush cim -y
+drush sql-cli < ../database.sql
 
 echo "Adding server info"
 
-./enable_ldap.sh
+/local/drupal/sites/setup/enable_ldap.sh
 
 
