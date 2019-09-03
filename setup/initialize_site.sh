@@ -1,5 +1,5 @@
 #!/bin/bash
-
+drushcmd = '/local/drupal/site/vendor/drush/drush/drush'
 echo "*** Setting the website on docker after compose install"
 echo ""
 echo "*Setting up directory permissions"
@@ -19,7 +19,7 @@ ls -latr
 echo "Import Config or Load Database if config doesn't work"
 #echo "drush cim -y"
 #drush cim -y
-drush sql-cli < /local/drupal/site/database.sql
+$drushcmd sql-cli < /local/drupal/site/database.sql
 
 echo "Adding server info"
 
