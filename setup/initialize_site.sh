@@ -15,7 +15,10 @@ fi
 #echo ""
 
 #composer install
-
+echo ""
+echo ""
+echo "***** Initialize DRUPAL for first time use."
+echo 
 echo "*** Setting the website on docker after compose install"
 echo ""
 echo "*Setting up directory permissions"
@@ -37,14 +40,14 @@ chmod -R 664 /local/drupal/site/web/sites/default/s*
 #echo "Import Config"
 #echo "drush cim -y"
 #drush cim -y
-echo "Load Database"
+echo "* Load Database"
 drush sql-cli < /local/drupal/site/database.sql
 
-echo "Enable LDAP"
+echo "* Enable LDAP"
 
 ./setup/enable_ldap.sh
 
-echo "Clear Cache"
+echo "* Clear Cache"
 drush cr
 
 
