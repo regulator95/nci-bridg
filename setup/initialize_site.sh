@@ -10,11 +10,11 @@ if [ -d "/local/drupal/site/docker/apache" ];then
     echo "Adding addition apache config files"
     cp /local/drupal/site/docker/apache/* /etc/httpd/conf.d
 fi
-echo ""
-echo "*** Compose install"
-echo ""
+#echo ""
+#echo "*** Compose install"
+#echo ""
 
-composer install
+#composer install
 
 echo "*** Setting the website on docker after compose install"
 echo ""
