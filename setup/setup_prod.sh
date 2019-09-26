@@ -10,4 +10,9 @@ echo ""
 drush pm-uninstall devel -y
 echo "Clearing Cache"
 
+echo ""
+echo "Set logging to 'some'"
+echo ""
+drush cset system.logging error_level "some" -y
+
 drush cr

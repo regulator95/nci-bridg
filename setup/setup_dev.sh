@@ -8,6 +8,11 @@ echo ""
 echo "Enable Devel module"
 echo ""
 drush pm-enable devel -y
+echo ""
+echo "Set logging to 'some'"
+echo ""
+drush cset system.logging error_level "verbose" -y
+
 echo "Clearing Cache"
 drush cr
 

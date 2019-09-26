@@ -27,7 +27,7 @@ echo "chmod -R 775 /local/drupal/site/web/sites/default/files"
 echo "Recursive doesn't work for s3fs.  So skipping for now."
 chmod -R 775 /local/drupal/site/web/sites/default/files
 echo "chmod -R 664 /local/drupal/site/web/sites/default/s*"
-chmod -R 664 /local/drupal/site/web/sites/default/s*
+chmod 664 /local/drupal/site/web/sites/default/s*
 
 #echo ""
 #echo "*Add symbolic link to shared volume"
