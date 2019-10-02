@@ -1,0 +1,32 @@
+/* custom download and browse buttons on top of page */
+
+.btn-top-download {
+    color: #ffffff;
+    background-color: #26a3a5;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .btn-top-download:hover,
+  .btn-top-download:active,
+  .btn-top-download:focus,
+  .btn-top-download.active {
+    background: #e4e4e4;
+    color: #5c5c5c;
+    
+  }
+  
+  .btn-top-browse {
+    color: #ffffff;
+    background-color: #4e6cff;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .btn-top-browse:hover,
+  .btn-top-browse:active,
+  .btn-top-browse:focus,
+  .btn-top-browse.active {
+    background: #e4e4e4;
+    color: #5c5c5c;
+  }
