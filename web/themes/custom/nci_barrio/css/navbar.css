@@ -9,12 +9,13 @@ nav#block-mainnavigation-3 .nav-item {
 }
 */
 
+nav#block-nci-barrio-main-menu ul.nav,
 nav#block-mainnavigation ul.nav,
 nav#block-mainnavigation-2 ul.nav,
 nav#block-mainnavigation-3 ul.nav {
   margin: 0rem;
 }
-
+nav#block-nci-barrio-main-menu ul.nav li a.nav-link,
 nav#block-mainnavigation ul.nav li a.nav-link,
 nav#block-mainnavigation-2 ul.nav li a.nav-link,
 nav#block-mainnavigation-3 ul.nav li a.nav-link {
@@ -22,6 +23,7 @@ nav#block-mainnavigation-3 ul.nav li a.nav-link {
     font-size: 13pt;
   }
 }
+nav#block-nci-barrio-main-menu .dropdown-item.active, nav#block-nci-barrio-main-menu .dropdown-item:active,
 nav#block-mainnavigation .dropdown-item.active, nav#block-mainnavigation .dropdown-item:active,
 nav#block-mainnavigation-2 .dropdown-item.active, nav#block-mainnavigation-2 .dropdown-item:active,
 nav#block-mainnavigation-3 .dropdown-item.active, nav#block-mainnavigation-3 .dropdown-item:active {
@@ -34,6 +36,7 @@ nav#block-mainnavigation-3 .dropdown-item.active, nav#block-mainnavigation-3 .dr
   font-weight:bold;
   background-color:GhostWhite;
 }
+
 
 /*
 #navbar-main {

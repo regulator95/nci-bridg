@@ -1,9 +1,9 @@
 global-styling-nci:
   css:
     theme:
-      css/navbar.css: {}
       css/cancer.css: {}
       css/style.css: {}
+      css/navbar.css: {}
       css/bridgmodel.css: {}
 global-styling:
   version: VERSION
