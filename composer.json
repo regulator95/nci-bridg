@@ -27,7 +27,7 @@
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/config_sync": "^2.0@beta",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7.0",
+        "drupal/core": "^8.8.0-alpha1@alpha",
         "drupal/delete_all": "^1.0",
         "drupal/devel": "^2.1",
         "drupal/diff": "^1.0@RC",
@@ -60,7 +60,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.7.0"
+        "webflo/drupal-core-require-dev": "^8.8.0"
     },
     "conflict": {
         "drupal/drupal": "*"
