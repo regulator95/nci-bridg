@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_event.default
     - field.field.node.event.body
-    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_link
+    - field.field.node.event.field_location
     - node.type.event
   module:
-    - comment
+    - datetime
+    - link
     - text
     - user
 id: node.event.default
@@ -19,22 +21,38 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
-  comment_node_event:
+  field_event_date:
+    weight: 2
     label: hidden
-    type: comment_default
-    weight: 20
     settings:
-      view_mode: default
-      pager_id: 0
+      timezone_override: ''
+      date_format: 'l - F j, Y @g:ia'
     third_party_settings: {  }
+    type: datetime_custom
     region: content
-  links:
-    weight: 100
-    settings: {  }
+  field_event_link:
+    type: link
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
+  field_location:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
-hidden: {  }
+hidden:
+  links: true

@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_link
+    - field.field.node.event.field_location
     - node.type.event
   module:
-    - comment
-    - path
+    - datetime
+    - link
     - text
 id: node.event.default
 targetEntityType: node
@@ -17,72 +19,55 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
-  comment_node_event:
-    type: comment_default
-    weight: 20
+  field_event_date:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
+    type: datetime_default
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 10
+  field_event_link:
+    type: link_default
+    weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
     settings:
-      display_label: true
-    weight: 15
-    region: content
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
+  field_location:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   status:
     type: boolean_checkbox
+    weight: 5
+    region: content
     settings:
       display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
+  url_redirects: true

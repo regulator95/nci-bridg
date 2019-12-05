@@ -1,0 +1,40 @@
+uuid: 17e78e6c-736e-426c-be3f-97f2101e7d28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f3d3ab61-9e5d-4612-8432-f8968e2f6435'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - nci_barrio
+id: eventcontrols
+theme: nci_barrio
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'block_content:f3d3ab61-9e5d-4612-8432-f8968e2f6435'
+settings:
+  id: 'block_content:f3d3ab61-9e5d-4612-8432-f8968e2f6435'
+  label: 'Event Controls'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      content_editor: content_editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /events
+    negate: false
+    context_mapping: {  }

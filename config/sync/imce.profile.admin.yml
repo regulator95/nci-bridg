@@ -7,7 +7,7 @@ label: admin
 description: 'This is for admin only'
 conf:
   extensions: '*'
-  maxsize: !!float 8
+  maxsize: !!float 32
   quota: null
   maxwidth: null
   maxheight: null

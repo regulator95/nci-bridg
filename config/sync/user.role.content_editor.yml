@@ -1,0 +1,20 @@
+uuid: f5d18d22-ebe0-48c3-be79-b381546ca99e
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'administer nodes'
+  - 'create event content'
+  - 'delete any event content'
+  - 'delete own event content'
+  - 'edit any event content'
+  - 'edit any page content'
+  - 'use text format full_html'
+  - 'view the administration theme'

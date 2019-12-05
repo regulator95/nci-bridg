@@ -18,14 +18,13 @@ module:
   contextual: 0
   ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
-  delete_all: 0
   devel: 0
   diff: 0
   dynamic_page_cache: 0
   editor: 0
   exclude_node_title: 0
-  externalauth: 0
   field: 0
   field_ui: 0
   file: 0
@@ -35,9 +34,7 @@ module:
   history: 0
   image: 0
   imce: 0
-  jquery_migrate: 0
   ldap_help: 0
-  ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
   link: 0
@@ -45,17 +42,17 @@ module:
   menu_ui: 0
   metatag: 0
   migrate: 0
-  migrate_drupal: 0
-  migrate_drupal_ui: 0
   module_filter: 0
   module_missing_message_fixer: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
+  path_alias: 0
   quickedit: 0
   rdf: 0
   redirect: 0
+  redirect_after_login: 0
   search: 0
   security_review: 0
   shortcut: 0
@@ -73,6 +70,7 @@ module:
   menu_link_content: 1
   pathauto: 1
   xmlsitemap: 1
+  externalauth: 10
   views: 10
   standard: 1000
 theme:

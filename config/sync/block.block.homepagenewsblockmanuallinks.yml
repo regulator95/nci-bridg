@@ -12,7 +12,7 @@ dependencies:
 id: homepagenewsblockmanuallinks
 theme: nci_barrio
 region: sidebar_second
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:1113af06-3fa2-45fe-95aa-b5b3b080146c'
 settings:
