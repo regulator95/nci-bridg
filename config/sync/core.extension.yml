@@ -34,6 +34,7 @@ module:
   history: 0
   image: 0
   imce: 0
+  ldap_authentication: 0
   ldap_help: 0
   ldap_servers: 0
   ldap_user: 0
