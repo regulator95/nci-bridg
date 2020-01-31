@@ -21,6 +21,7 @@
 /web/sites/default/files/php/*
 /web/sites/default/files/private/*
 /web/sites/default/files/asset_injector/*
+!/web/sites/default/files/assets/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
