@@ -11,7 +11,7 @@ dependencies:
 id: useraccountmenu
 theme: nci_barrio
 region: top_header_form
-weight: -5
+weight: -12
 provider: null
 plugin: 'system_menu_block:account'
 settings:

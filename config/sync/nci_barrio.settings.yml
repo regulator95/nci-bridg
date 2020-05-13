@@ -25,7 +25,7 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: sites/default/files/assets/nci-bridg.svg
+  path: sites/default/files/assets/bridg-logo.svg
 favicon:
   use_default: false
   path: sites/default/files/assets/favicons.png

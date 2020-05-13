@@ -1,6 +1,6 @@
 uuid: 82ae22f0-ac86-4388-8b51-19dac5da718a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:4c59be14-f552-4846-8e2c-cec2ed3b9e4e'
@@ -11,7 +11,7 @@ dependencies:
 id: headerright
 theme: nci_barrio
 region: top_header_form
-weight: -8
+weight: -14
 provider: null
 plugin: 'block_content:4c59be14-f552-4846-8e2c-cec2ed3b9e4e'
 settings:

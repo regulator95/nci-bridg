@@ -1,0 +1,31 @@
+uuid: d895088b-ee10-4797-821c-ba67d76ed270
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0f49f1d9-a67f-4e8f-a4fe-b4ef831f9846'
+  module:
+    - block_content
+    - system
+  theme:
+    - nci_barrio
+id: stakeholdersicons
+theme: nci_barrio
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:0f49f1d9-a67f-4e8f-a4fe-b4ef831f9846'
+settings:
+  id: 'block_content:0f49f1d9-a67f-4e8f-a4fe-b4ef831f9846'
+  label: 'stakeholders icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

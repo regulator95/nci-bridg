@@ -1,0 +1,14 @@
+uuid: bbda332c-c5d8-4286-a482-c2739de36892
+langcode: en
+status: true
+dependencies: {  }
+id: sticky_top
+label: sticky-top
+code: "// When the user scrolls the page, execute myFunction\r\nwindow.onscroll = function() {myFunction()};\r\n\r\n// Get the navbar\r\nvar navbar = document.getElementById(\"navbar\");\r\n\r\n// Get the offset position of the navbar\r\nvar sticky = navbar.offsetTop;\r\n\r\n// Add the sticky class to the navbar when you reach its scroll position. Remove \"sticky\" when you leave the scroll position\r\nfunction myFunction() {\r\n  if (window.pageYOffset >= sticky) {\r\n    navbar.classList.add(\"sticky\")\r\n  } else {\r\n    navbar.classList.remove(\"sticky\");\r\n  }\r\n}"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions: {  }
+conditions_require_all: true

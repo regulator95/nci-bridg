@@ -9,7 +9,7 @@ _core:
 id: nci_barrio_local_actions
 theme: nci_barrio
 region: content
-weight: -4
+weight: -11
 provider: null
 plugin: local_actions_block
 settings:

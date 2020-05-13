@@ -1,0 +1,31 @@
+uuid: 7320f133-b13b-48f5-801c-ccb7ec7e9e29
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:60f47fd9-e0ba-4228-a425-7b86fccd7ccc'
+  module:
+    - block_content
+    - system
+  theme:
+    - nci_barrio
+id: breadcrumbdownload
+theme: nci_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:60f47fd9-e0ba-4228-a425-7b86fccd7ccc'
+settings:
+  id: 'block_content:60f47fd9-e0ba-4228-a425-7b86fccd7ccc'
+  label: Breadcrumb-Download
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/download-model/*'
+    negate: false
+    context_mapping: {  }

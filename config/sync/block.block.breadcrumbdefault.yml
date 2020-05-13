@@ -1,0 +1,31 @@
+uuid: ff99ee2f-0c4c-4f65-a274-669b98a59439
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4c4964c9-ed28-4dc8-bda6-a711cd25a4dc'
+  module:
+    - block_content
+    - system
+  theme:
+    - nci_barrio
+id: breadcrumbdefault
+theme: nci_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:4c4964c9-ed28-4dc8-bda6-a711cd25a4dc'
+settings:
+  id: 'block_content:4c4964c9-ed28-4dc8-bda6-a711cd25a4dc'
+  label: Breadcrumb-Default
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/hl7-fhir\r\n/bridg-cdisc\r\n/bridg-fda\r\n/bridg-nci\r\n/bridg-iso-dicom"
+    negate: false
+    context_mapping: {  }

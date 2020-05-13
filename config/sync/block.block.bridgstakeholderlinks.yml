@@ -11,7 +11,7 @@ dependencies:
 id: bridgstakeholderlinks
 theme: nci_barrio
 region: top_header_form
-weight: -6
+weight: -13
 provider: null
 plugin: 'block_content:84fcfc31-534c-4015-a27b-f7190b4be7c0'
 settings:

@@ -1,0 +1,25 @@
+uuid: 350047ad-bbdb-4357-9095-0ad8891b472f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1b8f814-bd73-4b5e-899d-5b197dadde72'
+  module:
+    - block_content
+  theme:
+    - nci_barrio
+id: buttonlinks
+theme: nci_barrio
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:d1b8f814-bd73-4b5e-899d-5b197dadde72'
+settings:
+  id: 'block_content:d1b8f814-bd73-4b5e-899d-5b197dadde72'
+  label: 'Button Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

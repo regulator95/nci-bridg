@@ -1,0 +1,31 @@
+uuid: 3495457d-2026-4f8e-a09b-e7a3fddb1752
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:afc47983-49bd-4991-b41c-c804408d4560'
+  module:
+    - block_content
+    - system
+  theme:
+    - nci_barrio
+id: breadcrumbcontact
+theme: nci_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:afc47983-49bd-4991-b41c-c804408d4560'
+settings:
+  id: 'block_content:afc47983-49bd-4991-b41c-c804408d4560'
+  label: Breadcrumb-Contact
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false
+    context_mapping: {  }

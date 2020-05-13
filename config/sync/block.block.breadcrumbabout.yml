@@ -1,0 +1,31 @@
+uuid: 2c853f1c-1218-4b15-aa82-800e2d4d2c3a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:190ba42d-19f7-46a3-a6e1-7bcd6c01c5f9'
+  module:
+    - block_content
+    - system
+  theme:
+    - nci_barrio
+id: breadcrumbabout
+theme: nci_barrio
+region: breadcrumb
+weight: -11
+provider: null
+plugin: 'block_content:190ba42d-19f7-46a3-a6e1-7bcd6c01c5f9'
+settings:
+  id: 'block_content:190ba42d-19f7-46a3-a6e1-7bcd6c01c5f9'
+  label: Breadcrumb-About
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about-bridg\r\n/about-bridg/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: b2198628-0d75-4513-b0bf-b9f2f51a69d6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+id: accordion
+label: accordion
+code: "$('.toggle').click(function(e) {\r\n  \te.preventDefault();\r\n  \r\n    var $this = $(this);\r\n  \r\n    if ($this.next().hasClass('show')) {\r\n        $this.next().removeClass('show');\r\n        $this.next().slideUp(350);\r\n    } else {\r\n        $this.parent().parent().find('li .inner').removeClass('show');\r\n        $this.parent().parent().find('li .inner').slideUp(350);\r\n        $this.next().toggleClass('show');\r\n        $this.next().slideToggle(350);\r\n    }\r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /about-bridg/faq
+    negate: false
+conditions_require_all: true
