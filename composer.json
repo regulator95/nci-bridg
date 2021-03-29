@@ -104,6 +104,12 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/core": {
+                "Patch: Upgrade Modernizer from 3.3.1 to 3.8.0":
+                "https://www.drupal.org/files/issues/2020-01-16/3100937-38.patch"
+            }
         }
     }
 }
