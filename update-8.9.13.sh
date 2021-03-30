@@ -1,10 +1,11 @@
+shopt -s expand_aliases
 alias phpm="php -d memory_limit=-1"
 #alias composerm="/usr/bin/composer"
 
 echo "**** composer outdated 'drupal/*'  BEFORE"
 phpm /usr/bin/composer outdated "drupal/*"
 
-ech0 "*** CLEAN UP DATABASE"
+echo "*** CLEAN UP DATABASE"
 echo "*** Remove unnecessary TABLES for DB"
 echo
 SEARCH_TERM="old_"
@@ -41,7 +42,12 @@ drush pm-uninstall backup_migrate
 drush pm-enable backup_migrate -y
 
 echo "*** Uninstall Migrate Plus"
-drush ev "\Drupal::service('config.manager')->uninstall('module', 'migrate_plus');"
+drush pm-uninstall migrate_plus
+
+echo "*** Uninstall Migrate"
+drush pm-uninstall migrant
+
+#drush ev "\Drupal::service('config.manager')->uninstall('module', 'migrate_plus');"
 
 echo "*** Reinstall Google Analytics"
 drush ev "\Drupal::service('config.manager')->uninstall('module', 'google_analytics');"
@@ -65,6 +71,9 @@ echo "*** STEP 3: Update all modules"
 phpm /usr/bin/composer update
 drush entup -y
 drush updatedb -y
+
+echo "*** Get rid of path_alias path_alias issue"
+drush ev '$definition_update_manager=\Drupal::entityDefinitionUpdateManager();$definition_update_manager->updateEntityType(\Drupal::entityTypeManager()->getDefinition("path_alias"));'
 drush cr 
 
 echo
@@ -83,6 +92,7 @@ drush status
 php -v 
 httpd -v 
 
+echo "Upgrade completed:  Check Reports->Available Updates and Reports->Status for info.  Should be all GREEN and no issues on STATUS page."
 
 #phpm /usr/bin/composer remove webflo/drupal-core-require-dev
 #drush updatedb -y
