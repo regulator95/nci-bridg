@@ -43,9 +43,14 @@ drush pm-enable backup_migrate -y
 
 echo "*** Uninstall Migrate Plus"
 drush pm-uninstall migrate_plus
+#Remove the system.schema for migrate_plus
+drush php-eval "\Drupal::keyValue('system.schema')->delete('migrate_plus');"
 
 echo "*** Uninstall Migrate"
-drush pm-uninstall migrant
+drush pm-uninstall migrate
+
+echo "*** Missing Memory Module Fixer"
+drush pm-uninstall module_missing_message_fixer
 
 #drush ev "\Drupal::service('config.manager')->uninstall('module', 'migrate_plus');"
 
@@ -71,10 +76,22 @@ echo "*** STEP 3: Update all modules"
 phpm /usr/bin/composer update
 drush entup -y
 drush updatedb -y
+drush cr
+
+echo "*** Uninstall devel_entity_updates"
+drush pm-uninstall devel_entity_updates
 
 echo "*** Get rid of path_alias path_alias issue"
 drush ev '$definition_update_manager=\Drupal::entityDefinitionUpdateManager();$definition_update_manager->updateEntityType(\Drupal::entityTypeManager()->getDefinition("path_alias"));'
-drush cr 
+SEARCH_TERM="tmp_"
+echo "SEARCH_TERM = $SEARCH_TERM"
+echo "**** EXECUTE THESE COMMANDS AT THE COMMAND LINE"
+mysql --user=$username --password=$password --database=$database --host=$host --port=$port -A -e "show tables;" -s |egrep "^$SEARCH_TERM" |xargs -I "@@" echo mysql --user=$username --password=$password --database=$database --host=$host --port=$port -A -e "DROP TABLE @@"
+mysql --user=$username --password=$password --database=$database --host=$host --port=$port -A -e "show tables;" -s |egrep "^$SEARCH_TERM" |xargs -I "@@" mysql --user=$username --password=$password --database=$database --host=$host --port=$port -A -e "DROP TABLE @@"
+drush entup -y
+drush updatedb -y
+drush cr
+
 
 echo
 echo "*** Upgrade Complete"
