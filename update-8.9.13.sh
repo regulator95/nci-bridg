@@ -78,8 +78,7 @@ drush entup -y
 drush updatedb -y
 drush cr
 
-echo "*** Uninstall devel_entity_updates"
-drush pm-uninstall devel_entity_updates
+
 
 echo "*** Get rid of path_alias path_alias issue"
 drush ev '$definition_update_manager=\Drupal::entityDefinitionUpdateManager();$definition_update_manager->updateEntityType(\Drupal::entityTypeManager()->getDefinition("path_alias"));'
@@ -92,6 +91,8 @@ drush entup -y
 drush updatedb -y
 drush cr
 
+echo "*** Uninstall devel_entity_updates"
+drush pm-uninstall devel_entity_updates
 
 echo
 echo "*** Upgrade Complete"
